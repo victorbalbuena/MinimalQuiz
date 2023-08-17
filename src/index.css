@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animation-zoom {
+  animation: zoom 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.zoom-entry {
+  animation: zoomentry 1s cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+.back-img-tree {
+  background-image: url("./assets/bg-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes zoom {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes zoomentry {
+  0% {
+    opacity: 0%;
+  }
+  60% {
+    opacity: 100%;
+  }
+}
